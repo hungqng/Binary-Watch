@@ -20,4 +20,10 @@ class Solution:
             for h in range(12) for m in range(60)
             if (bin(h) + bin(m)).count('1') == turnedOn]
 
-            
+            # Solution 2
+            # times = []
+            # for h in range(12):
+            #     for m in range(60):
+            #         if (bin(h) + bin(m)).count('1') == turnedOn:
+            #             times.append(f'{h}:{m:02d}')
+            # return times  
